@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Traffic Light Color Alert">
+    <title>Traffic Light Response</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Traffic Light Response</h1>
+            <img id="traffic-light-img" class="img"  src="https://media.istockphoto.com/id/1342180810/vector/traffic-light-cartoon-character-with-semaphore-signal.jpg?s=612x612&w=0&k=20&c=PvtJTnPdmFz_R36lE0Cr7GCTTaT1g7dXH0Tbs_ySs2M=" alt="Traffic Light" usemap="#trafficMap">
+        
+        
+        <div class="input-section">
+            <label for="color-input">Enter the Color of Traffic Light:</label>
+            <input type="text" id="color-input" placeholder="Enter red, yellow, or green" required>
+            <button onclick="checkTrafficLight()">Check</button>
+        </div>
+
+        <!-- Image section (it will change based on the input) -->
+        <div class="image-section">
+            <img id="traffic-light-img" src="" alt="" style="display: none;">
+        </div>
+
+        <!-- Result Section -->
+        <div class="result-box" id="result-box">
+            <!-- The result will be displayed here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
